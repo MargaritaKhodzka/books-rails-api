@@ -5,13 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-# Book.create([
-#     { title: 'Don Quixote' },
-#     { title: 'The Knight of the Burning Pestle' },
-#     { title: 'Cardenio' },
-#     { title: 'Camino Real ' },
-#     { title: 'Madame Bovary' }
-# ])
 
 10.times do
   Book.create(title: Faker::Book.title)
