@@ -7,5 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 10.times do
-  Book.create(title: Faker::Book.title)
+  Book.create([{
+    title: Faker::Book.title,
+    author: Faker::Book.author
+  }])
 end
