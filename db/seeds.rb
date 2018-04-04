@@ -7,8 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 10.times do
-  Book.create([{
+  Book.create({
     title: Faker::Book.title,
     author: Faker::Book.author
-  }])
+  }).tap do |book|
+    2.times do
+      book.comments.create(content: Faker::Lorem.sentence)
+    end
+  end
 end
