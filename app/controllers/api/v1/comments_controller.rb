@@ -10,7 +10,7 @@ class Api::V1::CommentsController < ApplicationController
 
   def destroy
     book = Book.find(params[:book_id])
-    comment = book.comment.find(params[:id])
+    comment = book.comments.find(params[:id])
     if comment.destroy
       render json: {commentId: comment.id}, status: 200
     end
@@ -20,5 +20,5 @@ class Api::V1::CommentsController < ApplicationController
   def comment_params
     params.permit(:content)
   end
-  
+
 end
