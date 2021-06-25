@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+*Rails + JS SPA application
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The page is rendered in Rails (root path ‘/‘)
+Everything on the client side is rendered in JavaScript
+A list of books and a new book form are displayed on initial load
+A user can Create, Update, Destroy and View books
+On the view of a single book, a user is able to add comments about the book
